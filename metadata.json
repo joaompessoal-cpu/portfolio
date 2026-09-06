@@ -1,0 +1,8 @@
+{
+  "name": "Portfolio tracking",
+  "description": "Real-time investment portfolio tracker inspired by getquin with Bento Grid dark theme, live quotes polling, and asset allocation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

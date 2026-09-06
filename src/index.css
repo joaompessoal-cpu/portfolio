@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sat: env(safe-area-inset-top, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+  }
+
+  html, body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
+
+/* Hide scrollbar for clean iPhone Safari view */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* iOS Safe Area Padding Utilities */
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top, 16px));
+}
+.pb-safe {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom, 20px));
+}
+.pl-safe {
+  padding-left: max(1rem, env(safe-area-inset-left, 16px));
+}
+.pr-safe {
+  padding-right: max(1rem, env(safe-area-inset-right, 16px));
+}
